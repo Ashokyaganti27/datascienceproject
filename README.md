@@ -3,9 +3,10 @@
 ### workflows -Ml Pipeline
 
 1. Data Ingestion
-2. Data Transformation
-3. Model Trainer
-4. Model Evaluation
+2. Data validation
+3. Data Transformation
+4. Model Trainer
+5. Model Evaluation
 
 ## workflows
 1.update config.yaml

@@ -21,7 +21,10 @@ class DataValidationConfig():
     
 
 
-
+@dataclass
+class DataTransformationConfig():
+    root_dir: Path
+    data_path: Path
 
 
 
