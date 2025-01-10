@@ -27,6 +27,17 @@ class DataTransformationConfig():
     data_path: Path
 
 
+@dataclass
+class ModelTrainerconfig():
+    root_dir: Path
+    train_datapath: Path
+    test_datapath: Path
+    model_name: str
+    alpha: float
+    l1_ratio: float
+    target_column: str
+
+
 
 
 

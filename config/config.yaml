@@ -21,7 +21,14 @@ data_transforamtion:
 
 
 
+model_trainer:
+  root_dir: artifacts/model_trainer
+  train_datapath: artifacts/data_transformation/train.csv
+  test_datapath: artifacts/data_transformation/test.csv
+  model_name: model.joblib
 
+
+  
 
 
 
