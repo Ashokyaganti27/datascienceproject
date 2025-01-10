@@ -3,7 +3,7 @@ from src.datascience.pipeline.data_ingestion_pipeline import DataIngestionTraini
 from src.datascience.pipeline.data_validation_pipeline import DataValidationPipeline
 from src.datascience.pipeline.data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.datascience.pipeline.model_trainer_pipeline import ModelTrainingPipeline
-
+from src.datascience.pipeline.model_evaluation_pipeline import ModelEvaluationTrainingPipeline
 STAGE_NAME="Date Ingestion Stage"
 
 try:
@@ -53,7 +53,17 @@ except Exception as e:
 
 
 
+STAGE_NAME="Model Evaluation Stage"
 
+if __name__=="__main__":
+
+    try:
+        logger.info(f">>>>>> stage {STAGE_NAME} ... started")
+        obj=ModelEvaluationTrainingPipeline()
+        obj.initiate_evaluation_data()
+        logger.info(f">>>> stage {STAGE_NAME} completed......")
+    except Exception as e:
+        raise e
 
 
 logger.info("logging Successfully")

@@ -41,6 +41,15 @@ class ModelTrainerconfig():
 
 
 
+@dataclass
+class ModelEvalutionConfig():
+    root_dir: Path
+    test_datapath: Path
+    model_filepath: Path
+    metrics_file_name: Path
+    target_column: str
+    all_params: dict
+    mlflow_uri: str
 
 
 
